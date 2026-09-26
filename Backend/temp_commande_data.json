@@ -1,0 +1,16 @@
+{
+    "id_client": 1,
+    "id_pharmacie": 1,
+    "mode_reception": "livraison",
+    "id_utilisateur": 2,
+    "medicaments": [
+        {
+            "id_medicament": 1,
+            "quantite": 2
+        },
+        {
+            "id_medicament": 3,
+            "quantite": 1
+        }
+    ]
+}
