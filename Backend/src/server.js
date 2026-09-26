@@ -8,14 +8,14 @@ async function startServer() {
     const connection = await pool.getConnection();
     console.log("✅ Connexion à MySQL réussie !");
     connection.release();
-  } catch (error) {
-    console.error("❌ Erreur MySQL :", error.message);
-  }
 
-  // Démarrer le serveur après avoir monté toutes les routes
-  App.listen(PORT, () => {
-    console.log(`Serveur démarré sur http://localhost:${PORT}`);
-  });
+    App.listen(PORT, () => {
+      console.log(`🚀 Serveur démarré sur le port ${PORT}`);
+    });
+  } catch (error) {
+    console.error("❌ Erreur de connexion à MySQL :", error.message);
+    process.exit(1);
+  }
 }
 
-startServer();         
+startServer();   
