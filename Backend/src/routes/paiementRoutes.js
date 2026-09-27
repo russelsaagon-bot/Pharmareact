@@ -1,10 +1,10 @@
 import express from "express";
 import { verifierToken } from "../middleswares/authMiddleswares.js";
 import { autoriserRole } from "../middleswares/roleMiddleware.js";
-import { creerPaiement } from "../controllers/PaiementController.js";
-import { validerPaiement } from "../controllers/PaiementController.js";
-import { changerStatutPaiement } from "../controllers/PaiementController.js";
-import { listerPaiements } from "../controllers/PaiementController.js";
+import { creerPaiement } from "../controllers/paiementController.js";
+import { validerPaiement } from "../controllers/paiementController.js";
+import { changerStatutPaiement } from "../controllers/paiementController.js";
+import { listerPaiements } from "../controllers/paiementController.js";
 
 const router = express.Router();
 
